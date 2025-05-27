@@ -1,14 +1,14 @@
 // Importer les modules, dépendences nécéssaires
 const express = require('express');
-const { default: mongoose } = require('mongoose');
 const server = express();
 const environement = require('dotenv').config();
 const bodyParser = require('body-parser');
 const path = require('path');
+const jwt = require('jsonwebtoken');
 const authRoutes = require('./routes/auth.routes');
+const link_DB = require('./databases/db');
 
 const PORT = 9669;
-const url = process.env.MONGO_URL;
 
 // Middlewares
 server.use(express.json());
@@ -24,9 +24,7 @@ server.get('/', (request, response) => {
 // server.use('/', authRoutes);
 
 // Connexion database
-mongoose.connect(url)
-.then(() => console.log('Database connected !'))
-.catch(() => console.log('Connexion Attempt Failed !'));
+link_DB();
 
 // Server launched
 server.listen(PORT, ()=> {

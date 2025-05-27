@@ -1,5 +1,10 @@
 const express = require('express');
-const auth_routes = express.Router();
+const router = express.Router();
 
-// auth_routes.get('/', );
-// auth_routes.post('/', );
+router.get('/signup', () => {});
+router.post('/signup', () => {});
+
+router.get('/login', () => {});
+router.post('/login', () => {});
+
+module.exports = router;
