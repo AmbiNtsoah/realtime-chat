@@ -2,10 +2,6 @@ const socket = io();
 
 const userEmail = localStorage.getItem('userEmail');
 
-// if (!userEmail) {
-//   window.location.href = '/';
-// }
-
 socket.emit('join', userEmail);
 
 socket.on('chatMessage', ({ email, message }) => {
@@ -45,18 +41,6 @@ const token = localStorage.getItem('token');
             listItem.textContent = message;
             messageList.appendChild(listItem);
         }
-
-        // // Send a new message to the server
-        // function sendMessage() {
-        //     const messageInput = document.getElementById('message-input');
-        //     const message = messageInput.value.trim();
-
-        //     if (message !== '') {
-        //         socket.emit('chatMessage', message);
-        //         displayMessage('You: ' + message);
-        //         messageInput.value = '';
-        //     }
-        // }
 
         function handleLogout() {
             localStorage.removeItem('token');
