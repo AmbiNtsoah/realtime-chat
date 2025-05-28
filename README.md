@@ -1,14 +1,14 @@
 # 📱 Realtime Chat
 
-Une application de chat en temps réel construite avec Node.js, Express et Socket.IO. Elle permet à plusieurs utilisateurs de rejoindre des salons de discussion et d'échanger des messages instantanément via le navigateur.
+Une application de chat en temps réel construite avec Node.js, Express et Socket.IO. Elle permet à plusieurs utilisateurs de rejoindre des discussion et d'échanger des messages instantanément via le navigateur.
 
 ## 🚀 Fonctionnalités
 
 * 🔐 Authentification des utilisateurs
 * 💬 Messagerie en temps réel via WebSockets
-* 🧑‍🤝‍🧑 Prise en charge de plusieurs salons de discussion
+* 🧑‍🤝‍🧑 Prise en charge d'utilisaterus connecté
 * 🕒 Affichage des messages avec horodatage
-* 🎨 Interface utilisateur réactive et moderne
+* 🎨 Interface utilisateur
 
 ## 🛠️ Technologies utilisées
 
