@@ -65,4 +65,12 @@ realtime-chat/
 ├── .env                  # Variables d'environnement
 └── server.js             # Point d'entrée principal
 ```
+## 🔐 API REST d'authentification
 
+Le projet inclut une API REST pour la gestion de l'authentification (inscription, connexion, déconnexion). Cette API est testable avec Postman ou tout autre outil de test d'API.
+
+* Endpoints typiques
+
+`POST /auth/signup` – Inscription d'un nouvel utilisateur
+
+`POST /auth/login` – Connexion utilisateur
